@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff7ed, #eff6ff);
+    color: #1e293b;
+}
+/*------------------------------*/
+/*--|estilo_alfabeto_infantil|--*/
+/*------------------------------*/
+.contenedor_alfabeto {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+.encabezado_alfabeto {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.icono_alfabeto {
+    margin-bottom: 8px;
+    color: #f97316;
+    font-size: 40px;
+}
+.encabezado_alfabeto h1 {
+    margin-bottom: 7px;
+    color: #1e293b;
+    font-size: 32px;
+}
+.encabezado_alfabeto p {
+    color: #64748b;
+    font-size: 14px;
+}
+/*-------------------------------------*/
+/*--|estilo_herramientas_albabeticos|--*/
+/*-------------------------------------*/
+.herramientas_alfabeto {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    padding: 13px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+}
+.buscador_alfabeto {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+}
+.buscador_alfabeto i {
+    color: #64748b;
+}
+.buscador_alfabeto input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+}
+.buscador_alfabeto input:focus {
+    border-color: #f97316;
+}
+.contador_favoritos {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #64748b;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.contador_favoritos i {
+    color: #ef4444;
+}
+.contador_favoritos strong {
+    color: #1e293b;
+}
+#limpiar_favoritos {
+    padding: 9px 13px;
+    border: none;
+    border-radius: 8px;
+    background: #475569;
+    color: #ffffff;
+    cursor: pointer;
+}
+#limpiar_favoritos:hover {
+    background: #334155;
+}
+/*------------------------------*/
+/*--|estilo_tarjetas_alfabeto|--*/
+/*------------------------------*/
+.contenedor_tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.tarjeta_letra {
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
+    transition: transform 0.2s ease;
+}
+.tarjeta_letra:hover {
+    transform: translateY(-4px);
+}
+.cabecera_tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.letra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: #ffedd5;
+    color: #ea580c;
+    font-size: 32px;
+    font-weight: bold;
+}
+.boton_favorito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #f8fafc;
+    color: #94a3b8;
+    cursor: pointer;
+}
+.boton_favorito.activo {
+    color: #ef4444;
+}
+.imagen_palabra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin: 12px 0;
+    border-radius: 12px;
+    background: #f1f5f9;
+}
+.imagen_palabra i {
+    color: #f97316;
+    font-size: 55px;
+}
+.tarjeta_letra h2 {
+    margin-bottom: 5px;
+    color: #334155;
+    font-size: 20px;
+}
+.tarjeta_letra p {
+    margin-bottom: 14px;
+    color: #64748b;
+    font-size: 13px;
+}
+.boton_escuchar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #f97316;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton_escuchar:hover {
+    background: #ea580c;
+}
+/*-----------------------------*/
+/*--|estilo_mensaje_busqueda|--*/
+/*-----------------------------*/
+.mensaje_busqueda {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #64748b;
+    text-align: center;
+}
+.mensaje_busqueda.mostrar {
+    display: block;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alfabeto infantil</title>
+    <link rel="stylesheet" href="alfabeto_infantil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="alfabeto_infantil.js" defer></script>
+</head>
+<body>
+    <!-------------------------------------->
+    <!--|estructuracion_alfabeto_infantil|-->
+    <!-------------------------------------->
+    <main class="contenedor_alfabeto">
+        <header class="encabezado_alfabeto">
+            <div class="icono_alfabeto">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+            <h1>Alfabeto Infantil</h1>
+            <p>Aprende letras y palabras de una manera divertida.</p>
+        </header>
+        <!------------------------------>
+        <!--|herramientas_albabeticos|-->
+        <!------------------------------>
+        <section class="herramientas_alfabeto">
+            <div class="buscador_alfabeto">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar_alfabeto" placeholder="Buscar letra o palabra...">
+            </div>
+            <div class="contador_favoritos">
+                <i class="fa-solid fa-heart"></i>Favoritos:<strong id="cantidad_favoritos">0</strong>
+            </div>
+            <button id="limpiar_favoritos" type="button"><i class="fa-solid fa-trash"></i>Limpiar</button>
+        </section>
+        <!----------------------->
+        <!--|tarjetas_alfabeto|-->
+        <!----------------------->
+        <section id="contenedor_tarjetas" class="contenedor_tarjetas">
+            <article class="tarjeta_letra" data-id="letra_a" data-letra="a" data-palabra="avion">
+                <div class="cabecera_tarjeta">
+                    <span class="letra">A</span>
+                    <button class="boton_favorito" type="button"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="imagen_palabra">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <h2>Avión</h2>
+                <p>A de Avión</p>
+                <button class="boton_escuchar" type="button"><i class="fa-solid fa-volume-high"></i>Escuchar</button>
+            </article>
+            <article class="tarjeta_letra" data-id="letra_b" data-letra="b" data-palabra="barco">
+                <div class="cabecera_tarjeta">
+                    <span class="letra">B</span>
+                    <button class="boton_favorito" type="button"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="imagen_palabra">
+                    <i class="fa-solid fa-ship"></i>
+                </div>
+                <h2>Barco</h2>
+                <p>B de Barco</p>
+                <button class="boton_escuchar" type="button"><i class="fa-solid fa-volume-high"></i>Escuchar</button>
+            </article>
+            <article class="tarjeta_letra" data-id="letra_c" data-letra="c" data-palabra="casa">
+                <div class="cabecera_tarjeta">
+                    <span class="letra">C</span>
+                    <button class="boton_favorito" type="button"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="imagen_palabra">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <h2>Casa</h2>
+                <p>C de Casa</p>
+                <button class="boton_escuchar" type="button"><i class="fa-solid fa-volume-high"></i>Escuchar</button>
+            </article>
+            <article class="tarjeta_letra" data-id="letra_d" data-letra="d" data-palabra="dinosaurio">
+                <div class="cabecera_tarjeta">
+                    <span class="letra">D</span>
+                    <button class="boton_favorito" type="button"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="imagen_palabra">
+                    <i class="fa-solid fa-dragon"></i>
+                </div>
+                <h2>Dinosaurio</h2>
+                <p>D de Dinosaurio</p>
+                <button class="boton_escuchar" type="button"><i class="fa-solid fa-volume-high"></i>Escuchar</button>
+            </article>
+            <article class="tarjeta_letra" data-id="letra_e" data-letra="e" data-palabra="elefante">
+                <div class="cabecera_tarjeta">
+                    <span class="letra">E</span>
+                    <button class="boton_favorito" type="button"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="imagen_palabra">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <h2>Elefante</h2>
+                <p>E de Elefante</p>
+                <button class="boton_escuchar" type="button"><i class="fa-solid fa-volume-high"></i>Escuchar</button>
+            </article>
+            <article class="tarjeta_letra" data-id="letra_f" data-letra="f" data-palabra="flor">
+                <div class="cabecera_tarjeta">
+                    <span class="letra">F</span>
+                    <button class="boton_favorito" type="button"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="imagen_palabra">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h2>Flor</h2>
+                <p>F de Flor</p>
+                <button class="boton_escuchar" type="button"><i class="fa-solid fa-volume-high"></i>Escuchar</button>
+            </article>
+        </section>
+        <!---------------------->
+        <!--|mensaje_busqueda|-->
+        <!---------------------->
+        <div id="mensaje_busqueda" class="mensaje_busqueda">
+            No se encontraron tarjetas.
+        </div>
+    </main>
+</body>
+</html>
